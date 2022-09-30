@@ -27,8 +27,8 @@ class ChooseThings:
     def choose_character(self):
         print("Please introduce a letter or a number", end="  ")
         x = input(" ")
-        while not x.isalnum() and len(x)>1:
-            print("Not correct character")
+        while not x.isalnum() or len(x)>1:
+            print("Not correct character.Introduce again please!")
             x = input(" ")
         return x
 
